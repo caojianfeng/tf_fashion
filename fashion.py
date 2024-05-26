@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 
 from datas import save_datas
 
-checkpoint_path = "fesion/ckpt.keras"
+checkpoint_path = "fashion/ckpt.keras"
 
 
 def init_datas():
@@ -126,7 +126,7 @@ if __name__ == "__main__":
     # find_epochs(1,51,5) better is 6 and 11
     # find_epochs(1,16,1) best is 10
     # train_and_save_model(checkpoint_path)
-    # load_and_evaluate(checkpoint_path)
+    load_and_evaluate(checkpoint_path)
 
-    train_images, train_labels, test_images, test_labels = init_datas()
-    show_first25_imgs(train_images)
+    # train_images, train_labels, test_images, test_labels = init_datas()
+    # show_first25_imgs(train_images)
